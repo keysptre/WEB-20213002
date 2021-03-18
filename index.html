@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="js/echarts.min.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>数说扶贫-客观的数字&温暖的故事———回顾脱贫攻坚的那些年
+    </title>
+    <!-- 网站说明 -->
+    <meta name="description"
+        content=数说扶贫-客观的数字&温暖的故事———回顾脱贫攻坚的那些年 />
+    <!-- 关键字 -->
+    <meta name="keywords" content="数据可视化,脱贫攻坚,精准扶贫,扶贫十大楷模" />
+
+    <!-- 引入我们初始化样式文件 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入我们公共的样式文件 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入我们index.css文件  -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 快捷导航模块 start -->
+    <section class="shortcut">
+        <div class="w">
+            <div class="showTime">当前时间：2020年3月17-0时54分14秒</div>
+          <script>
+              var t = null;
+              t = setTimeout(time, 1000); //開始运行
+              function time() {
+                  clearTimeout(t); //清除定时器
+                  dt = new Date();
+                  var y = dt.getFullYear();
+                  var mt = dt.getMonth() + 1;
+                  var day = dt.getDate();
+                  var h = dt.getHours(); //获取时
+                  var m = dt.getMinutes(); //获取分
+                  var s = dt.getSeconds(); //获取秒
+                  document.querySelector(".showTime").innerHTML =
+                      "当前时间：" +
+                      y +
+                      "年" +
+                      mt +
+                      "月" +
+                      day +
+                      "-" +
+                      h +
+                      "时" +
+                      m +
+                      "分" +
+                      s +
+                      "秒";
+                  t = setTimeout(time, 1000); //设定定时器，循环运行
+              }
+          </script>
+            </div>
+        </div>
+    </section>
+    <!-- 快捷导航模块 end -->
+    <!-- header头部模块制作 start -->
+    <header class="header w">
+        <!-- logo模块 -->
+        <div class="logo">
+          <div class="search">
+            <input type="search" name="" id="" placeholder="输入省份试试">
+            <button>搜索</button>
+          </div>
+<h1>
+        <a href="index.html" title="数说扶贫">数说扶贫</a>
+      </h1>
+        </div>
+
+		
+</header>
+	
+    <!-- header头部模块制作 end -->
+    <!-- nav模块制作 start -->
+    <nav class="nav">
+        <div class="w">
+            <div class="dropdown">
+                <div class="dt">全部脱贫县</div>
+                <div class="dd">
+                    <ul>
+                        <li><a href="#">安徽</a> </li>
+                        <li><a href="#">重庆</a> </li>
+                        <li><a href="#">甘肃</a> </li>
+                        <li><a href="#">广西</a> </li>
+                        <li><a href="#">贵州</a> </li>
+                        <li><a href="#">海南</a> </li>
+                        <li><a href="#">河北</a> </li>
+                        <li><a href="#">河南</a> </li>
+                        <li><a href="#">黑龙江</a> </li>
+                        <li><a href="#">湖北</a> </li>
+                        <li><a href="#">湖南</a> </li>
+                        <li><a href="#">吉林</a> </li>
+                        <li><a href="#">江西</a> </li>
+                        <li><a href="#">内蒙古</a> </li>
+                        <li><a href="#">宁夏</a> </li>
+                        <li><a href="#">青海</a> </li>
+                        <li><a href="#">山西</a> </li>
+                        <li><a href="#">陕西</a> </li>
+                        <li><a href="#">四川</a> </li>
+                        <li><a href="#">西藏</a> </li>
+                        <li><a href="#">新疆</a> </li>
+                        <li><a href="#">云南</a> </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="index.html">总体概览</a></li>
+                    <li><a href="#">民生民情</a></li>
+                    <li><a href="#">优秀案例</a></li>
+                    <li><a href="视频回顾.html">视频回顾</a></li>
+					
+                </ul>
+				        <!-- search搜索模块 -->
+            </div>
+        </div>
+    </nav>
+    <!-- nav模块制作 end -->
+    <!-- 首页专有的模块 main  start -->
+    
+    <div class="w">
+        <div class="main">
+            <div class="focus">
+                
+                <div class="map">
+                    <div class="chart"></div>
+                    <div class="map1"></div>
+                    <div class="map2"></div>
+                    <div class="map3"></div>
+                  </div>
+            </div>			
+        
+        </div>
+    </div>
+    <!-- 首页专有的模块 main  end -->
+    <!-- 推荐模块 start-->
+    <div class="w recom">
+            <marquee behavior="alternate" scrollamount="10" scrolldelay="10" direction= "right" width="1200" height="163" onmouseover=stop() onmouseout=start()> 
+                        <a href='http://www.cpad.gov.cn/art/2018/8/17/art_2582_88006.html?from=timeline'>
+                       <img src="images/白晶莹.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2019/7/3/art_61_99584.html'>
+                       <img src="images/黄文秀.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2016/11/11/art_624_55484.html'>
+                       <img src="images/姜仕坤.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='https://baijiahao.baidu.com/s?id=1692641194159124743&wfr=spider&for=pc'>
+                        <img src="images/李玉.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2021/2/25/art_4323_187448.html'>
+						<img src="images/刘虎.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2020/10/17/art_3837_184403.html'>
+						<img src="images/毛相林.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2018/8/17/art_2583_88084.html'>
+						<img src="images/夏森.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2020/10/17/art_3838_184361.html'>
+						<img src="images/张桂梅.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2019/12/11/art_304_108262.html'>
+						<img src="images/张小娟.jpeg" width="163" height="163" />
+                        </a>
+                        <a href='http://www.cpad.gov.cn/art/2016/10/14/art_1505_54271.html'>
+						<img src="images/赵亚夫.jpeg" width="163" height="163" />
+                        </a>
+                
+            </marquee>  
+            </div>
+    </div>
+    <!-- 推荐模块 end-->
+    <!-- 楼层区域制作start -->
+   
+    <!-- 楼层区域制作end -->
+    <!-- 底部模块的制作 start -->
+    <footer class="footer">
+        <div class="w">
+            <div class="mod_help">
+                <dl>
+                    <dt>相关网站</dt>
+                    <dd><a href="http://www.cpad.gov.cn/col/col1341/index.html">国家乡村振兴局</a></dd>
+                    <dd><a href="http://f.china.com.cn/">中国扶贫在线</a></dd>
+                    <dd><a href="http://cprr.cssn.cn/">中国扶贫研究网</a></dd>
+                </dl>
+                <dl>
+                    <dt>相关电视剧</dt>
+                    <dd><a href="https://www.iqiyi.com/v_2ajz6bqpvh4.html?vfm=2008_aldbd&fv=p_02_01">山海情</a></dd>
+                    <dd><a href="https://www.mgtv.com/b/356982/10847832.html?cxid=95kqkw8n6">江山如此多娇</a></dd>
+                    <dd><a href="http://v.pptv.com/show/oT9HxCySAkCjIa0.html?rcc_id=baiduchuisou">一个都不能少</a></dd>
+
+                </dl>
+                <dl>
+                    <dt>吾辈楷模</dt>
+                    <dd><a href="http://cpc.people.com.cn/n1/2020/1116/c434377-31932430.html">毛相林</a></dd>
+                    <dd><a href="http://www.cpad.gov.cn/art/2018/8/17/art_2582_88006.html?from=timeline">白晶莹</a></dd>
+                    <dd><a href="http://www.cpad.gov.cn/art/2018/8/17/art_2582_88005.html">艾力夏提·艾尼瓦尔</a></dd>
+                    <dd><a href="https://new.qq.com/rain/a/20200629A0G4SZ00">赵亚夫</a></dd>
+                </dl>
+                <dl>
+                    <dt>中国扶贫</dt>
+                    <dd>
+                        <img src="images/wx_cz.jpg" alt="">
+                        公众号
+                    </dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="links">
+                    <a href="#">关于我们</a> | <a href="#">联系我们</a> 
+                </div>
+                <div class="copyright">
+                    电话：19121700683  邮箱: 10194800417@ecnu.edu.cn <br>
+                    上海市闵行区东川路500号华东师范大学
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/echarts.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/china.js"></script>
+    <script src="js/myMap.js"></script>
+</body>
+
+</html>
